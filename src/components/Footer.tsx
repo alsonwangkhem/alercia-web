@@ -84,7 +84,7 @@ export default function Footer() {
                 </li>
                 <li>
                   <a
-                    href="https://www.instagram.com/alerica.app/"
+                    href="https://www.instagram.com/alercia.app/"
                     className="hover:text-alercia-primary hover:underline flex items-center gap-2"
                   >
                     <svg
