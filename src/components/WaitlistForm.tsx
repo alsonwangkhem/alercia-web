@@ -11,13 +11,12 @@ export default function WaitlistForm() {
 
   const handleSubmit = async (formData: FormData) => {
     startTransition(async () => {
-      try {
-        const result = await joinWaitlist(formData);
+      const result = await joinWaitlist(formData);
+      if (result.error) {
+        toast.error(result.error);
+      } else if (result.message) {
         toast.success(result.message);
         setEmail("");
-      } catch (err: unknown) {
-        const error = err as Error;
-        toast.error(error.message || "An unexpected error occurred.");
       }
     });
   };
