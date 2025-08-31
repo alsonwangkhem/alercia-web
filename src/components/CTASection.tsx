@@ -104,7 +104,7 @@ export default function CTASection() {
             {[
             //   { number: "500+", label: "Early signups" },
             //   { number: "95%", label: "Want notifications" },
-              { number: "1 Sept 2025", label: "Expected launch" },
+              { number: "Sept 2025", label: "Expected launch" },
             ].map((stat, index) => (
               <div key={index} className="text-center">
                 <div className="text-2xl md:text-3xl font-bold text-alercia-primary mb-1">
